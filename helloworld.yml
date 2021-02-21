@@ -1,0 +1,11 @@
+---
+- name: This is a hello-world example
+  hosts: localhost
+  connection: ssh
+
+
+  tasks:
+    - name: create a file
+      copy:
+        content: hello world
+        dest: /tmp/testfile.txt
